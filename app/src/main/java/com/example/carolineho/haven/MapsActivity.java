@@ -159,10 +159,14 @@ public class MapsActivity extends AppCompatActivity implements
         mMap.setOnMyLocationButtonClickListener(this);
         enableMyLocation();
 
+        addMarkers(R.raw.lgbtqestablishments, R.drawable.establishments);
+        addMarkers(R.raw.lgbtqhospitals, R.drawable.hospitals);
+    }
+    public void addMarkers(int resource, int marker) {
         StringBuffer sb = new StringBuffer();
         BufferedReader br = null;
         try {
-            br = new BufferedReader(new InputStreamReader(getResources().openRawResource(R.raw.lgbtqhospitals)));
+            br = new BufferedReader(new InputStreamReader(getResources().openRawResource(resource)));
             String temp;
             while ((temp = br.readLine()) != null)
                 sb.append(temp);
@@ -190,7 +194,7 @@ public class MapsActivity extends AppCompatActivity implements
                                 jsonObj.getJSONArray("latlng").getDouble(1)
                         ))
                         .title(jsonObj.getString("name"))
-                        .icon(BitmapDescriptorFactory.fromResource(R.drawable.hospitals))
+                        .icon(BitmapDescriptorFactory.fromResource(marker))
                 );
             }
         } catch (JSONException e) {
