@@ -4,8 +4,8 @@
 
 Description: A location-based "safe spaces" Android app for LGBTQ people &amp; POC, Haven provides a map of friendly local businesses and services.
 
-Created Using: Android Studio, Google Maps API
+Created Using: Android Studio, Google Maps & Places APIs
 
 Version & Date: Version 1.0, 11/12/16
 
-Author: Caroline Ho
+Authors: Caroline Ho and Makena Low
