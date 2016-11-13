@@ -1,5 +1,6 @@
 package com.example.carolineho.haven;
 
+import android.content.DialogInterface;
 import android.content.pm.PackageManager;
 import android.location.Location;
 import android.support.annotation.NonNull;
@@ -7,6 +8,7 @@ import android.support.v4.app.ActivityCompat;
 import android.os.Bundle;
 import android.support.v4.content.ContextCompat;
 import android.support.v7.app.ActionBar;
+import android.support.v7.app.AlertDialog;
 import android.support.v7.app.AppCompatActivity;
 import android.util.Log;
 import android.widget.Toast;
@@ -33,6 +35,9 @@ import org.json.JSONObject;
 import java.io.BufferedReader;
 import java.io.IOException;
 import java.io.InputStreamReader;
+
+import static com.google.android.gms.location.places.Place.TYPE_ESTABLISHMENT;
+import static com.google.android.gms.location.places.Place.TYPE_HOSPITAL;
 
 public class MapsActivity extends AppCompatActivity implements
         GoogleMap.OnMyLocationButtonClickListener,
@@ -85,15 +90,43 @@ public class MapsActivity extends AppCompatActivity implements
 
         autocompleteFragment.setOnPlaceSelectedListener(new PlaceSelectionListener() {
             @Override
-            public void onPlaceSelected(Place place) {
-                mMap.addMarker(new MarkerOptions().position(place.getLatLng()).title(place.getName().toString()));
+            public void onPlaceSelected(final Place place) {
                 mMap.moveCamera(CameraUpdateFactory.newLatLng(place.getLatLng()));
-                Log.i(TAG, "Place: " + place.getName());
+                if (place.getPlaceTypes().contains(TYPE_ESTABLISHMENT) && !place.getPlaceTypes().contains(TYPE_HOSPITAL)) {
+                    AlertDialog.Builder builder = new AlertDialog.Builder(MapsActivity.this);
+                    builder.setTitle(place.getName())
+                            .setMessage("Would you like to add " + place.getName() + " as a safe place?")
+                            .setPositiveButton("OK", new DialogInterface.OnClickListener() {
+                                public void onClick(DialogInterface dialog, int id) {
+                                    mMap.addMarker(new MarkerOptions()
+                                            .position(place.getLatLng())
+                                            .title(place.getName().toString())
+                                            .icon(BitmapDescriptorFactory.fromResource(R.drawable.establishments)));
+                                }
+                            })
+                            .setNegativeButton("Cancel", new DialogInterface.OnClickListener() {
+                                public void onClick(DialogInterface dialog, int id) {
+
+                                }
+                            });
+                    AlertDialog alert = builder.create();
+                    alert.show();
+                } else {
+                    AlertDialog.Builder builder = new AlertDialog.Builder(MapsActivity.this);
+                    builder.setTitle("Invalid location")
+                            .setMessage("Please select a public establishment to review or learn about!")
+                            .setPositiveButton("OK", new DialogInterface.OnClickListener() {
+                                public void onClick(DialogInterface dialog, int id) {
+
+                                }
+                            });
+                    AlertDialog alert = builder.create();
+                    alert.show();
+                }
             }
 
             @Override
             public void onError(Status status) {
-                // TODO: Handle the error.
                 Log.i(TAG, "An error occurred: " + status);
             }
         });
