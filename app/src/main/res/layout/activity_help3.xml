@@ -1,0 +1,90 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:fitsSystemWindows="true"
+    tools:context="com.example.carolineho.haven.HelpActivity3">
+
+    <android.support.design.widget.AppBarLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:theme="@style/AppTheme.AppBarOverlay">
+
+        <android.support.v7.widget.Toolbar
+            android:id="@+id/toolbar"
+            android:layout_width="match_parent"
+            android:layout_height="?attr/actionBarSize"
+            android:background="?attr/colorAccent"
+            app:popupTheme="@style/AppTheme.PopupOverlay" />
+
+    </android.support.design.widget.AppBarLayout>
+
+    <TextView
+        android:text="Welcome to Haven! We're a location-based 'safe spaces' Android app dedicated to finding LGBTQ-friendly local businesses and services."
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:id="@+id/textView"
+        android:textAppearance="@style/TextAppearance.AppCompat"
+        android:layout_alignParentTop="true"
+        android:layout_alignParentLeft="true"
+        android:layout_alignParentStart="true"
+        android:layout_marginLeft="14dp"
+        android:layout_marginStart="14dp"
+        android:layout_marginTop="73dp"
+        android:textSize="24sp" />
+
+    <LinearLayout
+        android:orientation="horizontal"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_alignParentBottom="true"
+        android:layout_alignLeft="@+id/textView"
+        android:layout_alignStart="@+id/textView"
+        android:layout_marginBottom="140dp"
+        android:weightSum="1">
+
+        <ImageView
+            android:layout_width="89dp"
+            android:layout_height="match_parent"
+            app:srcCompat="@drawable/establishments"
+            android:id="@+id/imageView13"
+            android:layout_weight="0.66" />
+
+        <TextView
+            android:text="Leaders in LGBTQ Healthcare Equality "
+            android:layout_width="243dp"
+            android:layout_height="70dp"
+            android:id="@+id/textView3"
+            android:textSize="24sp" />
+    </LinearLayout>
+
+    <LinearLayout
+        android:orientation="horizontal"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginLeft="20dp"
+        android:layout_marginStart="20dp"
+        android:layout_centerVertical="true"
+        android:layout_alignLeft="@+id/textView"
+        android:layout_alignStart="@+id/textView">
+
+        <ImageView
+            android:layout_width="64dp"
+            android:layout_height="match_parent"
+            app:srcCompat="@drawable/hospitals"
+            android:id="@+id/imageView12"
+            android:layout_weight="50571.99" />
+
+        <TextView
+            android:text="LGBTQ-friendly establishments"
+            android:layout_width="186dp"
+            android:layout_height="79dp"
+            android:id="@+id/textView2"
+            android:textSize="24sp"
+            android:layout_weight="459745.34" />
+    </LinearLayout>
+
+
+</RelativeLayout>
