@@ -2,7 +2,7 @@
 
 **Built at CalHacks 2016**
 
-Description: A location-based "safe spaces" Android app for LGBTQ people &amp; POC, Haven provides a map of friendly local businesses and services.
+Description: Haven provides a map (based on one's current location) of LGBTQ-friendly spaces, from hospitals (selected by the Human Rights Campaign as Leaders in LGBTQ Healthcare Equality) to community centers to businesses.  (More features to come in the future!)
 
 Created Using: Android Studio, Google Maps & Places APIs
 
