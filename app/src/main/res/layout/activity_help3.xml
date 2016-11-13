@@ -48,7 +48,7 @@
         <ImageView
             android:layout_width="89dp"
             android:layout_height="match_parent"
-            app:srcCompat="@drawable/establishments"
+            app:srcCompat="@drawable/hospitals"
             android:id="@+id/imageView13"
             android:layout_weight="0.66" />
 
@@ -73,7 +73,7 @@
         <ImageView
             android:layout_width="64dp"
             android:layout_height="match_parent"
-            app:srcCompat="@drawable/hospitals"
+            app:srcCompat="@drawable/establishments"
             android:id="@+id/imageView12"
             android:layout_weight="50571.99" />
 
