@@ -9,7 +9,6 @@ import android.support.v4.content.ContextCompat;
 import android.support.v7.app.ActionBar;
 import android.support.v7.app.AppCompatActivity;
 import android.util.Log;
-import android.widget.AutoCompleteTextView;
 import android.widget.Toast;
 
 import com.google.android.gms.common.ConnectionResult;
@@ -25,6 +24,14 @@ import com.google.android.gms.maps.OnMapReadyCallback;
 import com.google.android.gms.maps.SupportMapFragment;
 import com.google.android.gms.maps.model.LatLng;
 import com.google.android.gms.maps.model.MarkerOptions;
+
+import org.json.JSONArray;
+import org.json.JSONException;
+import org.json.JSONObject;
+
+import java.io.BufferedReader;
+import java.io.IOException;
+import java.io.InputStreamReader;
 
 public class MapsActivity extends AppCompatActivity implements
         GoogleMap.OnMyLocationButtonClickListener,
@@ -118,10 +125,42 @@ public class MapsActivity extends AppCompatActivity implements
         mMap.setOnMyLocationButtonClickListener(this);
         enableMyLocation();
 
-        // Add a marker in Sydney and move the camera
-        //LatLng sydney = new LatLng(-34, 151);
-        //mMap.addMarker(new MarkerOptions().position(sydney).title("Marker in Sydney"));
-        //mMap.moveCamera(CameraUpdateFactory.newLatLng(sydney));
+        StringBuffer sb = new StringBuffer();
+        BufferedReader br = null;
+        try {
+            br = new BufferedReader(new InputStreamReader(getResources().openRawResource(R.raw.lgbtqhospitals)));
+            String temp;
+            while ((temp = br.readLine()) != null)
+                sb.append(temp);
+        } catch (IOException e) {
+            e.printStackTrace();
+        }  finally {
+            try {
+                br.close();
+            } catch (IOException e) {
+                e.printStackTrace();
+            }
+        }
+
+        String myJsonString = sb.toString();
+
+        try {
+            // De-serialize the JSON string into an array of objects
+            JSONArray jsonArray = new JSONArray(myJsonString);
+            for (int i = 0; i < jsonArray.length(); i++) {
+                // Create a marker for each hospital in the JSON data
+                JSONObject jsonObj = jsonArray.getJSONObject(i);
+                mMap.addMarker(new MarkerOptions()
+                        .position(new LatLng(
+                                jsonObj.getJSONArray("latlng").getDouble(0),
+                                jsonObj.getJSONArray("latlng").getDouble(1)
+                        ))
+                        .title(jsonObj.getString("name"))
+                );
+            }
+        } catch (JSONException e) {
+            e.printStackTrace();
+        }
     }
 
     public void onConnected(Bundle connectionHint) {
@@ -135,6 +174,7 @@ public class MapsActivity extends AppCompatActivity implements
             if (mLastLocation != null) {
                 Log.d("DEBUG", "current location: " + mLastLocation.toString());
                 LatLng latLng = new LatLng(mLastLocation.getLatitude(), mLastLocation.getLongitude());
+                mMap.animateCamera(CameraUpdateFactory.newLatLngZoom(latLng, 10));
             }
         }
     }
@@ -167,7 +207,7 @@ public class MapsActivity extends AppCompatActivity implements
     public boolean onMyLocationButtonClick() {
         // Return false so that we don't consume the event and the default behavior still occurs
         // (the camera animates to the user's current position).
-        mMap.animateCamera(CameraUpdateFactory.newLatLngZoom(new LatLng(mLastLocation.getLatitude(), mLastLocation.getLongitude()), 18));
+        mMap.animateCamera(CameraUpdateFactory.newLatLngZoom(new LatLng(mLastLocation.getLatitude(), mLastLocation.getLongitude()), 10));
         return false;
     }
 

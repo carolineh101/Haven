@@ -1,0 +1,583 @@
+[
+  {
+    "name": "Alta Bates Summit Medical Center",
+    "latlng": [
+      37.8196,
+      -122.2658
+    ]
+  },
+  {
+    "name": "California Pacific Medical Center",
+    "latlng": [
+      37.7684,
+      -122.4344
+    ]
+  },
+  {
+    "name": "Cedars-Sinai Medical Center",
+    "latlng": [
+      34.0753,
+      -118.3804
+    ]
+  },
+  {
+    "name": "Children's Hospital Los Angeles",
+    "latlng": [
+      34.0975,
+      -118.290556
+    ]
+  },
+  {
+    "name": "Contra Costa Behavioral Health Division",
+    "latlng": [
+      37.9926,
+      -122.0988
+    ]
+  },
+  {
+    "name": "Contra Costa Regional Medical Center",
+    "latlng": [
+      38.0067,
+      -122.1328
+    ]
+  },
+  {
+    "name": "Desert Regional Medical Center",
+    "latlng": [
+      33.8393,
+      -116.5433
+    ]
+  },
+  {
+    "name": "Eisenhower Medical Center",
+    "latlng": [
+      33.7633,
+      -116.4063
+    ]
+  },
+  {
+    "name": "Forterus",
+    "latlng": [
+      33.5767,
+      -117.1477
+    ]
+  },
+  {
+    "name": "Hoag Memorial Hospital Presbyterian",
+    "latlng": [
+      33.6236,
+      -117.9295
+    ]
+  },
+  {
+    "name": "John Muir Behavioral Health Center",
+    "latlng": [
+      37.9856,
+      -122.0373
+    ]
+  },
+  {
+    "name": "John Muir Medical Center, Concord",
+    "latlng": [
+      37.9826,
+      -122.0335
+    ]
+  },
+  {
+    "name": "John Muir Medical Center, Walnut Creek",
+    "latlng": [
+      37.9135,
+      -122.0413
+    ]
+  },
+  {
+    "name": "Kaiser Permanente, Antioch Medical Center",
+    "latlng": [
+      37.9509,
+      -121.7752
+    ]
+  },
+  {
+    "name": "Kaiser Permanente, Baldwin Park Medical Center",
+    "latlng": [
+      34.0654,
+      -117.9858
+    ]
+  },
+  {
+    "name": "Kaiser Permanente, Downey Medical Center",
+    "latlng": [
+      33.9192,
+      -118.1288
+    ]
+  },
+  {
+    "name": "Kaiser Permanente, Fontana Medical Center",
+    "latlng": [
+      34.0722,
+      -117.4326
+    ]
+  },
+  {
+    "name": "Kaiser Permanente, Fremont Medical Center",
+    "latlng": [
+      37.5527,
+      -121.9748
+    ]
+  },
+  {
+    "name": "Kaiser Permanente, Fresno Medical Center",
+    "latlng": [
+      36.8426,
+      -119.7803
+    ]
+  },
+  {
+    "name": "Kaiser Permanente, Irvine Medical Center",
+    "latlng": [
+      33.6585,
+      -117.7745
+    ]
+  },
+  {
+    "name": "Kaiser Permanente, Los Angeles Medical Center",
+    "latlng": [
+      34.0986,
+      -118.2942
+    ]
+  },
+  {
+    "name": "Kaiser Permanente, Manteca Medical Center",
+    "latlng": [
+      37.7982,
+      -121.2461
+    ]
+  },
+  {
+    "name": "Kaiser Permanente, Modesto Medical Center",
+    "latlng": [
+      37.7066,
+      -121.0525
+    ]
+  },
+  {
+    "name": "Kaiser Permanente, Moreno Valley Medical Center",
+    "latlng": [
+      33.8972,
+      -117.1861
+    ]
+  },
+  {
+    "name": "Kaiser Permanente, Oakland Medical Center",
+    "latlng": [
+      37.8236,
+      -122.2589
+    ]
+  },
+  {
+    "name": "Kaiser Permanente, Ontario Medical Center",
+    "latlng": [
+      34.0320,
+      -117.6088
+    ]
+  },
+  {
+    "name": "Kaiser Permanente, Orange County Anaheim Medical Center",
+    "latlng": [
+      33.8522,
+      -117.8453
+    ]
+  },
+  {
+    "name": "Kaiser Permanente, Panorama City Medical Center",
+    "latlng": [
+      34.2186,
+      -118.4302
+    ]
+  },
+  {
+    "name": "Kaiser Permanente, Redwood City Medical Center",
+    "latlng": [
+      37.4892,
+      -122.2243
+    ]
+  },
+  {
+    "name": "Kaiser Permanente, Richmond Medical Center",
+    "latlng": [
+      37.9372,
+      -122.3607
+    ]
+  },
+  {
+    "name": "Kaiser Permanente, Riverside Medical Center",
+    "latlng": [
+      33.9053,
+      -117.4696
+    ]
+  },
+  {
+    "name": "Kaiser Permanente, Roseville Medical Center",
+    "latlng": [
+      38.7471,
+      -121.2505
+    ]
+  },
+  {
+    "name": "Kaiser Permanente, Sacramento Medical Center",
+    "latlng": [
+      38.6019,
+      -121.3929
+    ]
+  },
+  {
+    "name": "Kaiser Permanente, San Diego Medical Center",
+    "latlng": [
+      32.7919,
+      -117.0950
+    ]
+  },
+  {
+    "name": "Kaiser Permanente, San Francisco Medical Center",
+    "latlng": [
+      37.782478,
+      -122.442898
+    ]
+  },
+  {
+    "name": "Kaiser Permanente, San Jose Medical Center",
+    "latlng": [
+      37.2396,
+      -121.8001
+    ]
+  },
+  {
+    "name": "Kaiser Permanente, San Leandro Medical Center",
+    "latlng": [
+      37.7062,
+      -122.1652
+    ]
+  },
+  {
+    "name": "Kaiser Permanente, San Rafael Medical Center",
+    "latlng": [
+      38.0043,
+      -122.5546
+    ]
+  },
+  {
+    "name": "Kaiser Permanente, Santa Clara Medical Center",
+    "latlng": [
+      37.3364,
+      -121.9976
+    ]
+  },
+  {
+    "name": "Kaiser Permanente, Santa Rosa Medical Center",
+    "latlng": [
+      38.4717,
+      -122.7273
+    ]
+  },
+  {
+    "name": "Kaiser Permanente, South Bay Medical Center",
+    "latlng": [
+      33.7886,
+      -118.2958
+    ]
+  },
+  {
+    "name": "Kaiser Permanente, South Sacramento Medical Center",
+    "latlng": [
+      38.4701,
+      -121.4225
+    ]
+  },
+  {
+    "name": "Kaiser Permanente, South San Francisco Medical Center",
+    "latlng": [
+      37.6597,
+      -122.4393
+    ]
+  },
+  {
+    "name": "Kaiser Permanente, Vacaville Medical Center",
+    "latlng": [
+      38.3887,
+      -121.9388
+    ]
+  },
+  {
+    "name": "Kaiser Permanente, Vallejo Medical Center",
+    "latlng": [
+      38.1269,
+      -122.2484
+    ]
+  },
+  {
+    "name": "Kaiser Permanente, Walnut Creek Medical Center",
+    "latlng": [
+      37.8924,
+      -122.0594
+    ]
+  },
+  {
+    "name": "Kaiser Permanente, West Los Angeles Medical Center",
+    "latlng": [
+      34.0387,
+      -118.3752
+    ]
+  },
+  {
+    "name": "Kaiser Permanente, Woodland Hills Medical Center",
+    "latlng": [
+      34.1707,
+      -118.5896
+    ]
+  },
+  {
+    "name": "Keck Medical Center of USC",
+    "latlng": [
+      34.0617,
+      -118.2011
+    ]
+  },
+  {
+    "name": "LAC + USC Medical Center",
+    "latlng": [
+      34.0576,
+      -118.2074
+    ]
+  },
+  {
+    "name": "Los Angeles LGBT Center",
+    "latlng": [
+      34.1004,
+      -118.3326
+    ]
+  },
+  {
+    "name": "Mattel Children's Hospital UCLA",
+    "latlng": [
+      34.0664,
+      -118.4463
+    ]
+  },
+  {
+    "name": "Palo Alto Medical Foundation",
+    "latlng": [
+      36.9823,
+      -121.9977
+    ]
+  },
+  {
+    "name": "Resnick Neuropsychiatric Hospital at UCLA",
+    "latlng": [
+      34.065239,
+      -118.446235
+    ]
+  },
+  {
+    "name": "Ronald Reagan UCLA Medical Center",
+    "latlng": [
+      34.0664,
+      -118.4464
+    ]
+  },
+  {
+    "name": "Santa Clara Valley Medical Center",
+    "latlng": [
+      37.3132,
+      -121.9334
+    ]
+  },
+  {
+    "name": "Santa Monica-UCLA Medical Center and Orthopaedic Hospital",
+    "latlng": [
+      34.0267,
+      -118.4867
+    ]
+  },
+  {
+    "name": "Scripps Green Hospital",
+    "latlng": [
+      32.8972,
+      -117.2428
+    ]
+  },
+  {
+    "name": "Scripps Memorial Hospital Encinitas",
+    "latlng": [
+      33.0373,
+      -117.2836
+    ]
+  },
+  {
+    "name": "Scripps Memorial Hospital La Jolla",
+    "latlng": [
+      32.8845,
+      -117.2252
+    ]
+  },
+  {
+    "name": "Scripps Mercy Hospital, Chula Vista campus",
+    "latlng": [
+      32.6336,
+      -117.0836
+    ]
+  },
+  {
+    "name": "Scripps Mercy Hospital, San Diego Campus",
+    "latlng": [
+      32.7514,
+      -117.1608
+    ]
+  },
+  {
+    "name": "St. Mary's Medical Center",
+    "latlng": [
+      33.7799,
+      -118.1859
+    ]
+  },
+  {
+    "name": "Stanford Health Care",
+    "latlng": [
+      37.4355,
+      -122.1750
+    ]
+  },
+  {
+    "name": "Sutter Amador Hospital",
+    "latlng": [
+      38.3500,
+      -120.7633
+    ]
+  },
+  {
+    "name": "Sutter Davis Hospital",
+    "latlng": [
+      38.5629,
+      -121.7713
+    ]
+  },
+  {
+    "name": "Sutter Delta Medical Center",
+    "latlng": [
+      37.9824,
+      -121.8036
+    ]
+  },
+  {
+    "name": "Sutter Maternity and Surgery Center of Santa Cruz",
+    "latlng": [
+      36.9878,
+      -121.9774
+    ]
+  },
+  {
+    "name": "Sutter Medical Center, Sacramento",
+    "latlng": [
+      38.5709,
+      -121.4697
+    ]
+  },
+  {
+    "name": "Sutter Medical Foundation",
+    "latlng": [
+      38.812077,
+      -121.285188
+    ]
+  },
+  {
+    "name": "Sutter Roseville Medical Center",
+    "latlng": [
+      38.7662,
+      -121.2493
+    ]
+  },
+  {
+    "name": "Sutter Santa Rosa Regional Hospital",
+    "latlng": [
+      38.4697,
+      -122.7074
+    ]
+  },
+  {
+    "name": "Sutter Solano Medical Center",
+    "latlng": [
+      38.1312,
+      -122.2374
+    ]
+  },
+  {
+    "name": "Sutter Tracy Community Hospital",
+    "latlng": [
+      37.7438,
+      -121.4340
+    ]
+  },
+  {
+    "name": "UC Davis Medical Center",
+    "latlng": [
+      38.5548,
+      -121.4558
+    ]
+  },
+  {
+    "name": "UC San Diego Health System",
+    "latlng": [
+      32.7544,
+      -117.1658
+    ]
+  },
+  {
+    "name": "UCLA Arthur Ashe Student Health & Wellness Center",
+    "latlng": [
+      34.0717,
+      -118.4453
+    ]
+  },
+  {
+    "name": "UCSF Medical Center",
+    "latlng": [
+      37.7630,
+      -122.4581
+    ]
+  },
+  {
+    "name": "USC Verdugo Hills Hospital",
+    "latlng": [
+      34.2047,
+      -118.2159
+    ]
+  },
+  {
+    "name": "VA Loma Linda Healthcare System",
+    "latlng": [
+      34.0500,
+      -117.2498
+    ]
+  },
+  {
+    "name": "VA Long Beach Healthcare System",
+    "latlng": [
+      33.7771,
+      -118.1191
+    ]
+  },
+  {
+    "name": "VA Palo Alto Health Care System",
+    "latlng": [
+      37.403559,
+      -122.141981
+    ]
+  },
+  {
+    "name": "VA San Diego Healthcare System",
+    "latlng": [
+      32.8751,
+      -117.2324
+    ]
+  }
+]
